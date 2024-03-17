@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt_wght.ttf");
+}
+
+:root {
+  --clr-primary-sft-orange: hsl(35, 77%, 62%);
+  --clr-primary-sft-red: hsl(5, 85%, 63%);
+  --clr-neutral-off-white: hsl(36, 100%, 99%);
+  --clr-neutral-gray-blue: hsl(236, 13%, 42%);
+  --clr-neutral-blue-dark: hsl(240, 100%, 5%);
+  font-size: 15px;
+  font-family: Inter;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 4em;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--clr-neutral-gray-blue);
+}
+
+.nav-items a:hover {
+  color: var(--clr-primary-sft-orange);
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4em;
+  gap: 2rem;
+}
+
+.heading-color {
+  color: var(--clr-neutral-blue-dark);
+}
+
+.section-color {
+  color: var(--clr-neutral-gray-blue);
+}
+
+.btn {
+  background-color: var(--clr-primary-sft-red);
+  color: var(--clr-neutral-off-white);
+  border: none;
+  padding: 1em 2em;
+  font-size: 1em;
+  cursor: pointer;
+  letter-spacing: 0.25em;
+}
+
+.btn:hover {
+  background-color: var(--clr-neutral-blue-dark);
+  color: var(--clr-neutral-off-white);
+}
+
+.main-section {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.main-section img {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.side {
+  /* grid-row: span 2; */
+  background-color: var(--clr-neutral-blue-dark);
+  color: var(--clr-neutral-off-white);
+  padding: 1em 2em;
+}
+
+.side div:not(:last-child) {
+  border-bottom: 0.5px solid var(--clr-neutral-off-white);
+}
+
+.side h3 a {
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--clr-neutral-off-white);
+}
+
+.side h3 a:hover {
+  color: var(--clr-primary-sft-orange);
+}
+
+.side h2 {
+  font-size: 2em;
+  color: var(--clr-primary-sft-orange);
+  font-weight: 600;
+}
+
+.bottom {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.article {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.article img {
+  width: 100%;
+}
